@@ -5,14 +5,14 @@ params:
   author: "Mickaël Canouil, *Ph.D.*"
   institute: "Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille"
   date: !r format(Sys.time(), "%B %d, %Y")
-  theme: "mc"
+  theme: "rlille"
 output:
   xaringan::moon_reader:
     includes:
       after_body: 
     self_contained: true
     seal: false
-    css: [default, css/mc.css, css/mc-fonts.css]
+    css: [default, css/rlille.css, css/mc-fonts.css]
     nature:
       highlightStyle: github
       highlightLines: true
@@ -29,7 +29,7 @@ class: title-slide center middle
 
 <style type="text/css">
 :root {
-  --main-logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/coeos.svg);
+  --main-logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/rlille.svg);
 }
 </style>
 

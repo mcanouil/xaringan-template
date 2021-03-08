@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  color: #CCCCCC !important;
+  color: #EEEEEE !important;
   text-decoration: none;
 }
 
@@ -118,12 +118,14 @@ h2, h3, h4 {
 }
 
 .title-slide {
-  background-color: #D40000;
-  border-top: 80px solid #D40000;
+  /*background-color: #D40000;
+  border-top: 80px solid #D40000;*/
+  background-color: #F2F2F2;
+  border-top: 80px solid #F2F2F2;
 }
 
 .title-slide h1  {
-  color: #F2F2F2;
+  color: #D40000;
   font-size: 50px;
   text-shadow: none;
   font-weight: 400;
@@ -134,7 +136,7 @@ h2, h3, h4 {
 .title-slide h2  {
   margin-top: -25px;
   padding-bottom: -20px;
-  color: #F2F2F2;
+  color: #D40000;
   text-shadow: none;
   font-weight: 300;
   font-size: 35px;
@@ -142,7 +144,7 @@ h2, h3, h4 {
   margin-left: 15px;
 }
 .title-slide h3  {
-  color: #F2F2F2;
+  color: #7F7F7F;
   text-shadow: none;
   font-weight: 300;
   font-size: 25px;
@@ -155,8 +157,8 @@ hr, .title-slide h2::after, .mline h1::after {
   content: '';
   display: block;
   border: none;
-  background-color: #F2F2F2;
-  color: #F2F2F2;
+  background-color: #D40000;
+  color: #D40000;
   height: 3px;
 }
 

@@ -18,7 +18,7 @@
   top: 20px;
   left: 20px;
   height: 115.7px;
-  width: 100px;
+  width: 513.8px;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: var(--side-logo);
@@ -118,8 +118,6 @@ h2, h3, h4 {
 }
 
 .title-slide {
-  /*background-color: #D40000;
-  border-top: 80px solid #D40000;*/
   background-color: #F2F2F2;
   border-top: 80px solid #F2F2F2;
 }
@@ -194,18 +192,20 @@ hr, .mline h1::after {
   background: #EBEBEB;
 }
 
-.remark-code {
-  background: #EBEBEB;
-}
-
 .remark-inline-code {
   background: #EBEBEB;
   border-radius: 3px;
   padding: 4px;
 }
 
-.remark-code-line {
+/*.remark-code-line {
   background: #EBEBEB;
+}*/
+
+.remark-code-line-highlighted { 
+  background-color: #D40000;
+  color: #F2F2F2;
+  opacity: 0.5;
 }
 
 .code10 .remark-code {

@@ -25,13 +25,13 @@
 }
 
 .logo {
+  content: "";
   z-index: 0;
   position: absolute;
   bottom: 12px;
   left: 20px;
-  font-size: 13pt;
-  width: 22.47pt;
-  height: 26pt;
+  width: 40.5px;
+  height: 35px;
   background-image: var(--main-logo);
   background-size: contain;
   background-repeat: no-repeat;

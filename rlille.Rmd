@@ -50,7 +50,7 @@ class: title-slide center middle
         } else {
           document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
             .forEach(function (slide) {
-              const logo = document.createElement('a')
+              const logo = document.createElement('div')
               logo.classList = 'logo'
               slide.appendChild(logo)
             })

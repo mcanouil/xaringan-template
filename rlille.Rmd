@@ -298,7 +298,8 @@ options(
 
 ## Subtitle
 
-`some code` and some text
+`some code` and some text.  
+A URL [m.canouil.fr](https://m.canouil.fr/).
 
 ```{r, echo = TRUE}
 1 + 1

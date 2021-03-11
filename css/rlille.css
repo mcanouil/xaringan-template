@@ -1,5 +1,10 @@
 @import url("https://use.fontawesome.com/releases/v5.12.1/css/all.css");
 
+:root {
+  --font-colour: #D40000;
+  --bg-colour: #F2F2F2;
+}
+
 .main-logo {
   content: "";
   position: absolute;
@@ -40,38 +45,38 @@
 #picture {
   border-style: solid;
   border-width: 2pt;
-  border-color: #F2F2F2;
+  border-color: var(--bg-colour);
   border-radius: 50%;
   padding: 5pt;
 }
 
 a {
-  color: #D40000;
+  color: var(--font-colour);
   text-decoration: none;
   border-bottom: none;
 }
 
 a:hover {
-  color: #D40000 !important;
+  color: var(--font-colour) !important;
   text-decoration: none;
   font-weight: 700;
 }
 
 .inverse a {
-  color: #F2F2F2;
+  color: var(--bg-colour);
   text-decoration: none;
   border-bottom: none;
 }
 
 .inverse a:hover {
-  color: #F2F2F2 !important;
+  color: var(--bg-colour) !important;
   text-decoration: none;
   font-weight: 700;
 }
 
 .remark-slide-content {
-  background-color: #F2F2F2;
-  border-top: 80px solid #D40000;
+  background-color: var(--bg-colour);
+  border-top: 80px solid var(--font-colour);
   font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
@@ -79,30 +84,30 @@ a:hover {
 }
 
 .title-slide .inverse .remark-slide-content {
-  background-color: #F2F2F2;
+  background-color: var(--bg-colour);
 }
 
 .inverse {
-  background-color: #D40000;
+  background-color: var(--font-colour);
   text-shadow: none;
 }
 
 /* Removes colored bar from top of the slide resulting in a clear slide */
 .clear{
-  border-top: 0px solid #F2F2F2;
+  border-top: 0px solid var(--bg-colour);
 }
 
 h1 {
   font-weight: normal;
   margin-top: -95px;
   margin-left: -00px;
-  color: #F2F2F2;
+  color: var(--bg-colour);
 }
 
 h2, h3, h4 {
   padding-top: -15px;
   padding-bottom: 00px;
-  color: #D40000;
+  color: var(--font-colour);
   text-shadow: none;
   font-weight: 400;
   text-align: left;
@@ -127,16 +132,16 @@ h2, h3, h4 {
 }
 
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #F2F2F2;
+  color: var(--bg-colour);
 }
 
 .title-slide {
-  background-color: #F2F2F2;
-  border-top: 80px solid #F2F2F2;
+  background-color: var(--bg-colour);
+  border-top: 80px solid var(--bg-colour);
 }
 
 .title-slide h1  {
-  color: #D40000;
+  color: var(--font-colour);
   font-size: 50px;
   text-shadow: none;
   font-weight: 400;
@@ -147,7 +152,7 @@ h2, h3, h4 {
 .title-slide h2  {
   margin-top: -25px;
   padding-bottom: -20px;
-  color: #D40000;
+  color: var(--font-colour);
   text-shadow: none;
   font-weight: 300;
   font-size: 35px;
@@ -168,8 +173,8 @@ hr, .title-slide h2::after, .mline h1::after {
   content: '';
   display: block;
   border: none;
-  background-color: #D40000;
-  color: #D40000;
+  background-color: var(--font-colour);
+  color: var(--font-colour);
   height: 3px;
 }
 
@@ -216,8 +221,8 @@ hr, .mline h1::after {
 }*/
 
 .remark-code-line-highlighted { 
-  background-color: #D40000;
-  color: #F2F2F2;
+  background-color: var(--font-colour);
+  color: var(--bg-colour);
   opacity: 0.5;
 }
 

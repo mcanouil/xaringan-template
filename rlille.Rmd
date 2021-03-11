@@ -28,12 +28,12 @@ date: '`r params[["date"]]`'
 
 class: title-slide center middle
 
-<style type="text/css">
+```{css, echo = FALSE}
 :root {
   --main-logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/rlille.svg);
   --side-logo: url(https://raw.githubusercontent.com/RLille/logos/master/RConsortium_Horizontal_Pantone.png)
 }
-</style>
+```
 
 <div class="main-logo"></div>
 <div class="side-logo"></div>

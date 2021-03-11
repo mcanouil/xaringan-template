@@ -3,7 +3,7 @@ params:
   title: 'A Title'
   shortitle: 'Demo'
   subtitle: "A Subtitle"
-  author: "Mickaël Canouil, *Ph.D.*"
+  author: 'Mickaël Canouil, *Ph.D.* (<a href="http://m.canouil.fr/" target="_blank"><i class="fas fa-home"></i> m.canouil.fr</a>)'
   institute: "Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille"
   date: !r format(Sys.Date(), "%B %d, %Y")
   theme: "rlille"
@@ -322,26 +322,10 @@ class: part-slide
 ---
 class: part-slide
 
-# <img src="https://avatars1.githubusercontent.com/u/8896044?s=460&v=4" height = "150px" id = "picture" />
-
-.pull-left[
-<a href="" target="_blank"><i class="fas fa-phone"></i> +33 (0) 374 00 81 29</a> 
-]
-
-.pull-right[
-<a href="mailto:mickael.canouil@cnrs.fr" target="_blank"><i class="fas fa-envelope"></i> mickael.canouil@cnrs.fr</a> 
-]
-
 .center[
-<a href="http://m.canouil.fr" target="_blank"><i class="fas fa-home"></i> m.canouil.fr</a> 
-
-<a href="https://github.com/mcanouil" target="_blank"><i class="fab fa-github"></i> mcanouil</a>
-]
-
-.pull-left[
-<a href="https://www.linkedin.com/in/mickael-canouil" target="_blank"><i class="fab fa-linkedin"></i> mickael-canouil</a> 
-]
-
-.pull-right[
-<a href="https://twitter.com/mickaelcanouil" target="_blank"><i class="fab fa-twitter"></i> @mickaelcanouil</a>
+<a href="https://rlille.fr/" target="_blank"><img src="https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/rlille.svg" width = "200px"/></br>
+<img src="https://raw.githubusercontent.com/RLille/logos/master/RConsortium_Horizontal_White.png" width = "200px"/>
+</br>
+<i style="font-size: 200%">rlille.fr</i>
+</a>
 ]

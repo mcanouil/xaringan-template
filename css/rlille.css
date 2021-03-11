@@ -36,3 +36,7 @@ hr, .title-slide h2::after, .mline h1::after {
 .remark-inline-code {
   background: #FAE7E7;
 }
+
+.title-slide a:hover {
+  color: var(--font-colour) !important;
+}

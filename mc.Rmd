@@ -3,7 +3,7 @@ params:
   title: 'A Title'
   shortitle: 'Demo'
   subtitle: "A Subtitle"
-  author: "Mickaël Canouil, *Ph.D.*"
+  author: 'Mickaël Canouil, *Ph.D.* (<a href="http://m.canouil.fr/" target="_blank"><i class="fas fa-home"></i> m.canouil.fr</a>)'
   institute: "Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille"
   date: !r format(Sys.Date(), "%B %d, %Y")
   theme: "mc"
@@ -339,15 +339,15 @@ class: part-slide
 ]
 
 .center[
-<a href="http://m.canouil.fr" target="_blank"><i class="fas fa-home"></i> m.canouil.fr</a> 
+<a href="http://m.canouil.fr/" target="_blank"><i class="fas fa-home"></i> m.canouil.fr</a> 
 
-<a href="https://github.com/mcanouil" target="_blank"><i class="fab fa-github"></i> mcanouil</a>
+<a href="https://github.com/mcanouil/" target="_blank"><i class="fab fa-github"></i> mcanouil</a>
 ]
 
 .pull-left[
-<a href="https://www.linkedin.com/in/mickael-canouil" target="_blank"><i class="fab fa-linkedin"></i> mickael-canouil</a> 
+<a href="https://www.linkedin.com/in/mickael-canouil/" target="_blank"><i class="fab fa-linkedin"></i> mickael-canouil</a> 
 ]
 
 .pull-right[
-<a href="https://twitter.com/mickaelcanouil" target="_blank"><i class="fab fa-twitter"></i> @mickaelcanouil</a>
+<a href="https://twitter.com/mickaelcanouil/" target="_blank"><i class="fab fa-twitter"></i> @mickaelcanouil</a>
 ]

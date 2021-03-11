@@ -110,6 +110,18 @@ a:hover {
   font-weight: 700;
 }
 
+.title-slide a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.title-slide a:hover {
+  color: var(--bg-colour) !important;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .clear{
   border-top: 0px solid var(--bg-colour);
 }

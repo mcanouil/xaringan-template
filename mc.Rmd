@@ -33,6 +33,12 @@ date: '`r params[["date"]]`'
 
 class: title-slide
 
+```{css, echo = FALSE}
+:root {
+  --main-logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/mc.svg);
+}
+```
+
 ```{r setup, include = FALSE}
 options("width" = 110)
 options(htmltools.dir.version = FALSE)

@@ -1,6 +1,7 @@
 ---
 params:
   title: 'A Title'
+  shortitle: 'Demo'
   subtitle: "A Subtitle"
   author: "Mickaël Canouil, *Ph.D.*"
   institute: "Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille"
@@ -8,32 +9,29 @@ params:
   theme: "rlille"
 output:
   xaringan::moon_reader:
-    includes:
-      after_body: 
     self_contained: true
+    css: [css/default.css, css/fonts.css, css/rlille.css]
+    includes:
+      after_body: css/scripts.html
     seal: false
-    css: [default, css/rlille.css, css/mc-fonts.css]
     nature:
       highlightStyle: github
       highlightLines: true
-      slideNumberFormat: "%current%" 
+      slideNumberFormat: | 
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
       ratio: "16:9"
       countIncrementalSlides: false
-title: '`r params[["title"]]`'
+title: '`r params[["shortitle"]]`'
 subtitle: '`r params[["subtitle"]]`'
 author: '`r params[["author"]]`'
 institute: '`r params[["institute"]]`'
 date: '`r params[["date"]]`'
 ---
 
-class: title-slide center middle
-
-```{css, echo = FALSE}
-:root {
-  --main-logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/rlille.svg);
-  --side-logo: url(https://raw.githubusercontent.com/RLille/logos/master/RConsortium_Horizontal_Pantone.png)
-}
-```
+class: title-slide
 
 ```{r setup, include = FALSE}
 options("width" = 110)
@@ -65,7 +63,7 @@ opts_chunk$set(
   fig.width = 11.5, # Default: 7
   fig.height = 5.75,  # Default: 7
   dpi = 150, # Default: 72
-  dev = "ragg_png", # Alt: svglite
+  dev = "svglite", # Alt: ragg_png
   dev.args = list(
     web_fonts = list("https://fonts.googleapis.com/css?family=Alegreya+Sans")
   )
@@ -255,42 +253,7 @@ options(
 )
 ```
 
-```{r xaringan-extra, echo = FALSE}
-library(xaringanExtra)
-use_tile_view()
-use_panelset()
-use_clipboard()
-use_extra_styles(
-  hover_code_line = TRUE,
-  mute_unhighlighted_code = TRUE
-)
-```
-
-<div class="main-logo"></div>
-<div class="side-logo"></div>
-<div>
-  <script>
-    (function () {
-      let tries = 0
-      function addLogo () {
-        if (typeof slideshow === 'undefined') {
-          tries += 1
-          if (tries < 10) {
-            setTimeout(addLogo, 100)
-          }
-        } else {
-          document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
-            .forEach(function (slide) {
-              const logo = document.createElement('div')
-              logo.classList = 'logo'
-              slide.appendChild(logo)
-            })
-        }
-      }
-      document.addEventListener('DOMContentLoaded', addLogo)
-    })()
-  </script>
-</div>
+<div class="main-logo"></div><div class="side-logo"></div>
 
 # `r params[["title"]]`
 
@@ -323,6 +286,28 @@ y
 
 ---
 
+# New slide with a panels
+
+.panelset[
+.panel[.panel-name[R Code]
+```{r, eval = FALSE}
+head(iris, 10)
+```
+]
+.panel[.panel-name[Table]
+```{r, echo = FALSE}
+kable(head(iris, 10))
+```
+]
+.panel[.panel-name[Plot]
+```{r, echo = FALSE}
+plot(iris[[1]], iris[[2]])
+```
+]
+]
+
+---
+
 # GGPLOT2
 
 ```{r, echo = FALSE}
@@ -330,33 +315,33 @@ ggplot(mtcars, aes(wt, mpg)) + geom_point(colour = theme_get()$line$colour) + la
 ```
 
 ---
-class: inverse, center, middle
+class: part-slide
 
-# Part 1
+# PART 1
 
 ---
-class: inverse, center, middle
+class: part-slide
 
 # <img src="https://avatars1.githubusercontent.com/u/8896044?s=460&v=4" height = "150px" id = "picture" />
 
 .pull-left[
-<a class="social" href="" target="_blank"><i class="fas fa-phone"></i> +33 (0) 374 00 81 29</a> 
+<a href="" target="_blank"><i class="fas fa-phone"></i> +33 (0) 374 00 81 29</a> 
 ]
 
 .pull-right[
-<a class="social" href="mailto:mickael.canouil@cnrs.fr" target="_blank"><i class="fas fa-envelope"></i> mickael.canouil@cnrs.fr</a> 
+<a href="mailto:mickael.canouil@cnrs.fr" target="_blank"><i class="fas fa-envelope"></i> mickael.canouil@cnrs.fr</a> 
 ]
 
 .center[
-<a class="social" href="http://m.canouil.fr" target="_blank"><i class="fas fa-home"></i> m.canouil.fr</a> 
+<a href="http://m.canouil.fr" target="_blank"><i class="fas fa-home"></i> m.canouil.fr</a> 
 
-<a class="social" href="https://github.com/mcanouil" target="_blank"><i class="fab fa-github"></i> mcanouil</a>
+<a href="https://github.com/mcanouil" target="_blank"><i class="fab fa-github"></i> mcanouil</a>
 ]
 
 .pull-left[
-<a class="social" href="https://www.linkedin.com/in/mickael-canouil" target="_blank"><i class="fab fa-linkedin"></i> mickael-canouil</a> 
+<a href="https://www.linkedin.com/in/mickael-canouil" target="_blank"><i class="fab fa-linkedin"></i> mickael-canouil</a> 
 ]
 
 .pull-right[
-<a class="social" href="https://twitter.com/mickaelcanouil" target="_blank"><i class="fab fa-twitter"></i> @mickaelcanouil</a>
+<a href="https://twitter.com/mickaelcanouil" target="_blank"><i class="fab fa-twitter"></i> @mickaelcanouil</a>
 ]

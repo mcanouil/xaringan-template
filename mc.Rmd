@@ -27,11 +27,11 @@ date: '`r params[["date"]]`'
 
 class: title-slide center middle
 
-<style type="text/css">
+```{css, echo = FALSE}
 :root {
   --main-logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/mc.svg);
 }
-</style>
+```
 
 <div class="main-logo"></div>
 <div>

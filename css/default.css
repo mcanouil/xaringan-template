@@ -111,6 +111,13 @@ a:hover {
   font-weight: 700;
 }
 
+h1 .remark-inline-code {
+  background: var(--bg-colour);
+  color: var(--font-colour);
+  border-radius: 3px;
+  padding: 4px;
+}
+
 .title-slide a {
   color: inherit;
   text-decoration: none;

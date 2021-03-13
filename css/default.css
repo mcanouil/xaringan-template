@@ -193,7 +193,7 @@ img, video, iframe {
 }
 
 blockquote {
-  border-left: solid 5px var(--bg-colour);
+  border-left: solid 5px var(--font-colour);
   padding-left: 1em;
 }
 
@@ -203,8 +203,8 @@ blockquote {
   border-bottom: 1px solid var(--bg-colour);
 }
 
-.remark-slide table thead th { 
-  border-bottom: 1px solid #ddd; 
+.remark-slide table thead th {
+  border-bottom: 1px solid #ddd;
 }
 th, td {
   padding: 5px;
@@ -445,7 +445,7 @@ hr, .title-slide h2::after, .mline h1::after {
   }
 }
 
-.remark-code-line-highlighted { 
+.remark-code-line-highlighted {
   background-color: var(--font-colour);
   color: var(--bg-colour);
   opacity: 0.5;

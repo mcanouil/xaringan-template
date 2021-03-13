@@ -40,3 +40,28 @@ hr, .title-slide h2::after, .mline h1::after {
 .title-slide a:hover {
   color: var(--font-colour) !important;
 }
+
+.part-slide {
+  color: var(--font-colour);
+  background-color: var(--bg-colour);
+  border-top: 80px solid transparent;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.part-slide h1 {
+  color: var(--font-colour);
+  background-color: var(--bg-colour);
+}
+
+.part-slide a {
+  color: var(--font-colour);
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.part-slide a:hover {
+  color: var(--font-colour) !important;
+  text-decoration: none;
+  font-weight: 700;
+}

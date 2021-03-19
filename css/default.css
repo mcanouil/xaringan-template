@@ -101,7 +101,7 @@ a:hover {
 .part-slide {
   color: var(--bg-colour);
   background-color: var(--font-colour);
-  border-top: 80px solid transparent;
+  border-top: 0px solid transparent;
   vertical-align: middle;
   text-align: center;
 }

@@ -314,7 +314,7 @@ plot(iris[[1]], iris[[2]])
 
 ---
 
-# GGPLOT2
+# GGPLOT2 With `code`
 
 ```{r, echo = FALSE}
 ggplot(mtcars, aes(wt, mpg)) + geom_point(colour = theme_get()$line$colour) + labs(title = "GGPLOT2")
@@ -323,7 +323,7 @@ ggplot(mtcars, aes(wt, mpg)) + geom_point(colour = theme_get()$line$colour) + la
 ---
 class: part-slide
 
-# PART 1
+# PART 1 With `code`
 
 ---
 class: part-slide

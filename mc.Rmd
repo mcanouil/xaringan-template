@@ -1,11 +1,10 @@
 ---
+title: "A Title"
+subtitle: "A Subtitle"
+author:  'Mickaël Canouil, *Ph.D.* (<a href="http://m.canouil.fr/" target="_blank"><i class="fas fa-home"></i> m.canouil.fr</a>)'
+institute: "Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille / Université de Lille"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
 params:
-  title: 'A Title'
-  shortitle: 'Demo'
-  subtitle: "A Subtitle"
-  author: 'Mickaël Canouil, *Ph.D.* (<a href="http://m.canouil.fr/" target="_blank"><i class="fas fa-home"></i> m.canouil.fr</a>)'
-  institute: "Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille"
-  date: !r format(Sys.Date(), "%B %d, %Y")
   theme: "mc"
 output:
   xaringan::moon_reader:
@@ -13,7 +12,6 @@ output:
     css: [css/default.css, css/fonts.css]
     includes:
       after_body: css/scripts.html
-    seal: false
     nature:
       highlightStyle: github
       highlightLines: true
@@ -24,14 +22,7 @@ output:
         </div>
       ratio: "16:9"
       countIncrementalSlides: false
-title: '`r params[["shortitle"]]`'
-subtitle: '`r params[["subtitle"]]`'
-author: '`r params[["author"]]`'
-institute: '`r params[["institute"]]`'
-date: '`r params[["date"]]`'
 ---
-
-class: title-slide
 
 ```{css, echo = FALSE}
 :root {
@@ -56,8 +47,9 @@ suppressPackageStartupMessages({
   library(data.table)
   library(showtext)
 })
+```
 
-
+```{r setup-knitr, include = FALSE}
 ### knitr settings =================================================================================
 opts_chunk$set(
   eval = TRUE, # Default: TRUE
@@ -76,20 +68,18 @@ opts_chunk$set(
 )
 font_add_google("Alegreya Sans", "Alegreya Sans", regular.wt = 300)
 showtext_auto()
+```
 
-
+```{r setup-ggplot2, include = FALSE}
 ### Tables and Figures Theme =======================================================================
-theme_black <- function(
+theme_mc <- function(
   base_size = 11,
   base_family = "",
   base_line_size = base_size / 22,
   base_rect_size = base_size / 22,
   theme = "mc"
 ) {
-  bc <- switch(EXPR = theme,
-    "mc" = c("#333333", "#7F7F7F", "#FFFFFF"),
-    "rlille" = c("#F2F2F2", "#CCCCCC", "#D40000")
-  )
+  bc <- c("#333333", "#7F7F7F", "#FFFFFF")
   half_line <- base_size / 2
   ggplot2::theme(
     line = ggplot2::element_line(
@@ -238,7 +228,7 @@ theme_black <- function(
     complete = TRUE
   )
 }
-theme_set(theme_black(base_size = 18, base_family = "Alegreya Sans", theme = params[["theme"]]))
+theme_set(theme_mc(base_size = 18, base_family = "Alegreya Sans"))
 theme_update(
   plot.title.position = "plot",
   plot.caption.position = "plot",
@@ -258,20 +248,6 @@ options(
   ggplot2.continuous.fill = function(...) scale_fill_viridis_c(..., begin = 0.15, end = 0.85)
 )
 ```
-
-<div class="main-logo"></div><div class="side-logo"></div>
-
-# `r params[["title"]]`
-
-## `r params[["subtitle"]]`
-
-### `r params[["author"]]`
-
-### `r params[["institute"]]`
-
-### `r params[["date"]]`
-
----
 
 # Introduction
 

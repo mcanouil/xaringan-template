@@ -1,35 +1,10 @@
 :root {
   --font-colour: #333333;
   --bg-colour: #FAFAFA;
-  --main-logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/coeos.svg);
-  --side-logo: none;
+  --logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/coeos.svg);
 }
 
 @import url("https://use.fontawesome.com/releases/v5.12.1/css/all.css");
-
-.main-logo {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  height: 115.7px;
-  width: 100px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: var(--main-logo);
-}
-
-.side-logo {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  height: 115.7px;
-  width: 100px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: var(--side-logo);
-}
 
 .logo {
   content: "";
@@ -39,7 +14,7 @@
   right: 20px;
   width: 69.42px;
   height: 60px;
-  background-image: var(--main-logo);
+  background-image: var(--logo);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -94,8 +69,12 @@ a:hover {
 
 .title-slide {
   background-color: var(--font-colour);
-  border-top: 80px solid var(--font-colour);
+  border-top: 0px solid var(--font-colour);
   vertical-align: middle;
+  background-position: top 20px right 20px;
+  background-repeat: no-repeat;
+  background-size: 100px auto;
+  background-image: var(--logo);
 }
 
 .part-slide {

@@ -4,6 +4,17 @@
   --logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/rlille.svg);
 }
 
+.title-slide .slide-url a {
+  color: var(--font-colour);
+}
+.title-slide .slide-url a:hover {
+  color: var(--font-colour);
+}
+
+#picture {
+  border-color: var(--font-colour);
+}
+
 .title-slide {
   background-color: var(--bg-colour);
   border-top: 0px solid var(--bg-colour);

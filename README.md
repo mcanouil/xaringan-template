@@ -6,4 +6,4 @@
 This is the work-in-progress repo for a template using `xaringan`.
 
 * [mc](https://m.canouil.fr/xaringan-template/mc.html)
-* [rille](https://m.canouil.fr/xaringan-template/rlille.html)
+* [rlille](https://m.canouil.fr/xaringan-template/rlille.html)

@@ -296,8 +296,8 @@ class: part-slide
 class: part-slide
 
 .center[
-<a href="https://rlille.fr/" target="_blank"><img src="https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/rlille.svg" width = "200px"/></br>
-<img src="https://raw.githubusercontent.com/RLille/logos/master/RConsortium_Horizontal_Pantone.png" width = "200px"/>
+<a href="https://rlille.fr/" target="_blank"><img src="https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/rlille.svg" width = "200px"/></br>
+<img src="https://raw.githubusercontent.com/RLille/logos/main/RConsortium_Horizontal_Pantone.png" width = "200px"/>
 </br>
 <i style="font-size: 200%">rlille.fr</i>
 </a>

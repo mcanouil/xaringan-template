@@ -4,6 +4,7 @@ subtitle: "A Subtitle"
 author:  'Mickaël Canouil, *Ph.D.* (<a href="http://m.canouil.fr/" target="_blank"><i class="fas fa-home"></i> m.canouil.fr</a>)'
 institute: "_Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille / Université de Lille_"
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
+knit: (function(inputFile, encoding) rmarkdown::render(inputFile, encoding = encoding, output_dir = "docs"))
 output:
   xaringan::moon_reader:
     self_contained: true

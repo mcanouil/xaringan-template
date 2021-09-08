@@ -195,9 +195,11 @@ blockquote {
 .remark-slide table thead th {
   border-bottom: 1px solid #ddd;
 }
+
 th, td {
   padding: 5px;
 }
+
 .remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
   background: #eee
 }
@@ -205,6 +207,7 @@ th, td {
 @page {
   margin: 0;
 }
+
 @media print {
   .remark-slide-scaler {
     width: 100% !important;
@@ -396,15 +399,19 @@ hr, .title-slide h2::after, .mline h1::after {
 .font160 {
   font-size: 160%;
 }
+
 .font170 {
   font-size: 170%;
 }
+
 .font180 {
   font-size: 180%;
 }
+
 .font190 {
   font-size: 190%;
 }
+
 .font200 {
   font-size: 200%;
 }
@@ -477,7 +484,6 @@ hr, .title-slide h2::after, .mline h1::after {
   height: 100%;
   background-color: var(--font-colour);
 }
-
 
 .panelset {
   width: 100%;

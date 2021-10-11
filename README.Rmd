@@ -7,7 +7,7 @@ output: github_document
 # xaringan-template
 
 <!-- badges: start -->
-![License](https://img.shields.io/github/license/mcanouil/xaringan-template?style=plastic)
+[![License](https://img.shields.io/github/license/mcanouil/xaringan-template)](LICENSE)
 <!-- badges: end -->
 
 This is a repository template for `xaringan` slides.
@@ -41,7 +41,7 @@ if (!file.exists(thumb) | file.mtime(thumb) < file.mtime(index_html)) {
     scale = 2
   )
   web_browser$close()
-  
+
   resize <- function(path_in, path_out) {
     image <- image_read(path_in)
     image <- image_resize(image, "384x")

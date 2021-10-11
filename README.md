@@ -1,5 +1,12 @@
 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 # xaringan-template
+
+<!-- badges: start -->
+
+[![License](https://img.shields.io/github/license/mcanouil/xaringan-template)](LICENSE)
+<!-- badges: end -->
 
 This is a repository template for `xaringan` slides.
 

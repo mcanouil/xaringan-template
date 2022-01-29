@@ -35,11 +35,11 @@ suppressPackageStartupMessages({
   library(knitr)
 
   library(data.table)
-  
+
   library(ragg)
   library(svglite)
   library(showtext)
-  
+
   library(ggplot2)
   library(ggtext)
   library(patchwork)
@@ -52,7 +52,7 @@ opts_chunk$set(
   include = TRUE, # Default: TRUE
   echo = TRUE, # Default: TRUE
   width = getOption("width"),
-  comment = "#>", 
+  comment = "#>",
   fig.align = "center",
   fig.width = 11.5, # Default: 7
   fig.height = 5.75,  # Default: 7
@@ -66,7 +66,7 @@ font_add_google("Alegreya Sans", "Alegreya Sans", regular.wt = 300)
 showtext_auto()
 ```
 
-```{r setup-ggplot2, code = source(here("assets/setup-ggplot2-mc.R")), include = FALSE}
+```{r setup-ggplot2, file = "assets/setup-ggplot2-mc.R", include = FALSE}
 ```
 
 ```{r, child = params[["content"]]}

@@ -66,7 +66,7 @@ font_add_google("Alegreya Sans", "Alegreya Sans", regular.wt = 300)
 showtext_auto()
 ```
 
-```{r setup-ggplot2, code = "assets/setup-ggplot2-rlille.R", include = FALSE}
+```{r setup-ggplot2, file = "assets/setup-ggplot2-rlille.R", include = FALSE}
 ```
 
 ```{r, child = params[["content"]]}

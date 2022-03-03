@@ -2,8 +2,7 @@ theme_mc <- function(
   base_size = 11,
   base_family = "",
   base_line_size = base_size / 22,
-  base_rect_size = base_size / 22,
-  theme = "mc"
+  base_rect_size = base_size / 22
 ) {
   bc <- c("#333333", "#7F7F7F", "#FAFAFA")
   half_line <- base_size / 2
